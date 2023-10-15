@@ -15,17 +15,17 @@
       <center><fieldset style="background-color: white;border:1px solid red;margin-top:0px;; border-radius:10px" > 
          <legend style="background-color:blue; color:white;text-shadow:2px 2px black;text-align: center"><b>Personal Information </b></legend>
        <label for="fname" ><b><br>First Name:</b></label>
-         <input type="text" id="fname" name="fname" required><br><br>
+         <input type="text" id="fname" name="firstname" required><br><br>
          <label for="lname"><b>Last Name:</b></label>
     
-        <input type="text" id="lname" nane="lname" required><br><br>
+        <input type="text" id="lname" name="lastname" required><br><br>
         <label for="oname"><b>Other Names:</b></label>
     
-        <input type="text" id="oname" name="oname"><br><br>
+        <input type="text" id="oname" name="othername"><br><br>
         <span><b>Gender:</b></span>
-        <input type="radio" id="male" name="gender">
+        <input type="radio" id="male" name="gender" value="Male">
         <label for ="male">Male</label>
-        <input type="radio" id="female" name="gender" >
+        <input type="radio" id="female" name="gender" Value="Female" >
         <label for ="female">Female</label><br><br>
        <center><label for=""><b><u>Date of Birth</u></b></b></label> </center><br>
        <label for="day"><b>Day</b></label>
@@ -86,7 +86,7 @@
            
          
        </label>
-       <select id="year" name="year">
+       <select id="year" name="year" >
            <option>1990</option>
            <option>1991</option>
            <option>1992</option>
@@ -117,9 +117,9 @@
        <input type="text" id="so" name="State of Origin">
        <label for="Nationality"><b><br><br>Nationality:</b></label>
         <input type="text" id="Nationality" name="Nationality"><p><b><u>Marital Status</u></b></p>
-        <input type="radio" id="single" name="status">
+        <input type="radio" id="single" name="status" value="Single">
         <label for="single" >Single</label>
-        <input type ="radio" id="married" name="status">
+        <input type ="radio" id="married" name="status" value="Married">
         <label for="married" >Married</label>
       </fieldset></center><br><br>
     <center > <fieldset style="background-color: white;border:1px solid red ">
@@ -127,16 +127,16 @@
               <b>Parents Information</b>
           </legend>
          <label for="fn"><b>Father's Name:</b></label>
-         <input type="text" id="fn"><br><br>
+         <input type="text" id="fn"  name="FatherName" required><br><br>
          <label for="mn"><b>Mother's Name:</b></label>
-         <input type="text" id="mn">
-        <label for="pn"><br><br><b>Phone No:</b></label>
+         <input type="text" id="mn" name="mothername"  required>
+        <label for="pn" ><br><br><b>Phone No:</b></label>
         
-        <input type="tel" id="pn"><br><br>
+        <input type="tel" id="pn" name="phoneno"><br><br>
         <label for="Emailp"><b>Email:</b></label>
         <input type="email" id="Emailp" name="Emailp" required>
-        <label for="ra"><b><br><br>Residential Address</b></label>  
-        <input type="text" id="ra">
+        <label for="ra" ><b><br><br>Residential Address</b> </label>  
+        <input type="text" id="ra" name="resedentialadress" required>
           
       </fieldset></center>
       <Br><br><br>
@@ -149,9 +149,9 @@
                     <label for="university">Name of
           University:</label>
           
-          <input type="text"><br><br>
-          <label for="course">Course:</label><input type="text">
-          <label for="doc"><br><br>Duration of course:</label><select id="course" >
+          <input type="text" name="Universityname" required><br><br>
+          <label for="course">Course:</label><input type="text" id="course" name="course">
+          <label for="doc"><br><br>Duration of course:</label><select id="course"  name="duration" required>
               <option>1</option>
            <option>2</option>
            <option>3</option>
@@ -163,7 +163,7 @@
           </select>
           <br><br>
           <label for="secondary">Name of secondary school:</label>
-          <input type="text">
+          <input type="text" name="secondaryschoolname" required>
           
           
           
@@ -176,12 +176,12 @@
        <center><fieldset style="background-color: white;border:1px solid red ">
            <legend style="background-color:blue; color:white;text-shadow:2px 2px black;text-align: center">Results</legend>
            <label >Jamb Score</label>
-           <input type="number" max_length="3"><br><br>
+           <input type="number" max_length="3" name="Jambscore" required><br><br>
            <label>Upload Jamb result</label>
-           <input type ="file"><br><br>
+           <input type ="file" name="Jambresult"><br><br>
            
            <label> Upload O level Results (gce/waec/neco)</label>
-           <input type="file"><br><br>
+           <input type="file" name="olevelresults" required><br><br>
            <input type="radio"  id="agree" required>
            <label for="agree"><b>Are you a member of RCCG</b></label>
            
@@ -189,7 +189,7 @@
        </fieldset>
        
        
-       <button onclick="submit()"><input type="submit" style="float: right;border-radius:20px; background-color: white"   target="_blank"></button>
+       <button onclick="submit()"><input type="submit" style="float: right;border-radius:20px; background-color: white;width:50px;height:30px"   target="_blank"></button>
        
        
         </form>
